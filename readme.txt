@@ -1,4 +1,4 @@
-﻿This is my first Git file
+8﻿This is my first Git file
 
 cd devops
 
@@ -65,4 +65,52 @@ Generate token
 Copy token
 $ git remote set-url origin https://token>@github.com/<username>/<repo>
 $ git push origin main
+
+exp:7&8
+sudo apt-get update
+sudo apt install docker
+sudo apt install docker.io
+sudo systemctl enable docker
+sudo systemctl status docker
+sudo systemctl start docker
+sudo docker run hello-world
+
+
+
+sudo systemctl stop systemd-resolved
+sudo systemctl disable systemd-resolved
+
+sudo nano /etc/resolv.conf
+
+Add Google DNS (8.8.8.8) or Cloudflare DNS(1.1.1.1) at the top:
+
+
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+Ctrl O   enter ctrl X
+
+sudo systemctl restart docker
+sudo docker run hello-world
+
+groups $USER
+sudo usermod -aG docker $USER
+sudo systemctl restart docker
+docker login
+
+ls -l /var/run/docker.sock
+sudo chmod 660 /var/run/docker.sock
+docker --version
+docker login
+
+
+
+newgrp docker
+docker login
+
+docker search apache
+docker search redis
+docker run docker/whalesay cowsay Hello everyone 
+docker ps
+docker pull nginx
 
